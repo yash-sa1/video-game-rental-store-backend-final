@@ -8,6 +8,12 @@ import java.util.Optional;
 
 @RestController
 public class Controller {
+
+    // Retrieve all customers
+    @GetMapping("/hello")
+    public String getHelloWorld() {
+        return "Yes workk!";
+    }
     private List<Customer> customerList = new ArrayList<>();
     private int customerIdCounter = 1;
 
