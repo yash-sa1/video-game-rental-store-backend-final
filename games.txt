@@ -1,5 +1,5 @@
 fifa 16,1,sport,13,47,https://www.fifauteam.com/wp-content/uploads/2015/07/A638-11.jpg
-fortnite,2,battle royale,0,108,https://e.snmc.io/lk/l/x/5c29b176b854d4326a1ef739065ddab6/10934807
+fortnite,2,battle royale,0,103,https://e.snmc.io/lk/l/x/5c29b176b854d4326a1ef739065ddab6/10934807
 The Last of Us Part II,3,action-adventure,5.99,12,https://m.media-amazon.com/images/I/61XLfBCZ8HL.jpg
 God of War Ragnarök,4,action-adventure,6.99,8,https://m.media-amazon.com/images/I/719TRoAm9LL._AC_UF894,1000_QL80_.jpg
 Horizon Forbidden West,5,rpg,5.99,10,https://upload.wikimedia.org/wikipedia/en/6/69/Horizon_Forbidden_West.jpg
