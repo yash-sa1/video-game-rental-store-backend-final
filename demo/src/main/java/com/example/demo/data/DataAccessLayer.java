@@ -29,6 +29,7 @@ public class DataAccessLayer implements DataAccessLayerInterface {
 
     @Override
     public List<VideoGame> getAllVideoGames() {
+
         return getAllFromFile(GAME_FILE, VideoGame::fromString);
     }
 
