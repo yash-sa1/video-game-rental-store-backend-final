@@ -1,0 +1,15 @@
+fifa 16,1,sport,13,47,https://www.fifauteam.com/wp-content/uploads/2015/07/A638-11.jpg
+fortnite,2,battle royale,0,108,https://e.snmc.io/lk/l/x/5c29b176b854d4326a1ef739065ddab6/10934807
+The Last of Us Part II,3,action-adventure,5.99,12,https://m.media-amazon.com/images/I/61XLfBCZ8HL.jpg
+God of War Ragnarök,4,action-adventure,6.99,8,https://m.media-amazon.com/images/I/719TRoAm9LL._AC_UF894,1000_QL80_.jpg
+Horizon Forbidden West,5,rpg,5.99,10,https://upload.wikimedia.org/wikipedia/en/6/69/Horizon_Forbidden_West.jpg
+Spider-Man: Miles Morales,6,action,4.99,15,https://m.media-amazon.com/images/I/71NP9JmbA2L._AC_UF894,1000_QL80_.jpg
+Call of Duty: Modern Warfare II,7,shooter,10.99,20,https://upload.wikimedia.org/wikipedia/en/a/a4/Modern_Warfare_II_Cover.jpg
+Elden Ring,8,rpg,14.99,18,https://upload.wikimedia.org/wikipedia/en/4/45/Elden_Ring_cover_art.jpg
+Red Dead Redemption 2,9,action-adventure,19.99,25,https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_2.jpg
+Cyberpunk 2077,10,rpg,29.99,30,https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg
+Minecraft,11,sandbox,26.99,200,https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png
+Grand Theft Auto V,12,action-adventure,19.99,50,https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png
+Assassin's Creed Valhalla,13,action-adventure,24.99,15,https://upload.wikimedia.org/wikipedia/en/8/8e/ACValhallaCover.jpg
+Overwatch 2,14,shooter,0.00,100,https://upload.wikimedia.org/wikipedia/en/3/3e/Overwatch_2_cover_art.jpg
+Legend of Zelda: Breath of the Wild,15,action-adventure,49.99,40,https://upload.wikimedia.org/wikipedia/en/a/a1/The_Legend_of_Zelda_Breath_of_the_Wild.jpg
