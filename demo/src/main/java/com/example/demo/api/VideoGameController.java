@@ -1,9 +1,9 @@
 package com.example.demo.api;
 
-import com.example.demo.model.Customer;
-import com.example.demo.model.RentGameRequest;
-import com.example.demo.model.ReturnGameRequest;
-import com.example.demo.model.VideoGame;
+import com.example.demo.model.entity.Customer;
+import com.example.demo.model.request.RentGameRequest;
+import com.example.demo.model.request.ReturnGameRequest;
+import com.example.demo.model.entity.VideoGame;
 import com.example.demo.service.VideoGameService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -62,10 +62,10 @@ public class VideoGameController {
     }
 
     @PutMapping("/return-game") // this is the put mapping for returning a game
-    public ResponseEntity returnGame(@RequestBody ReturnGameRequest returnGameRequest) throws IOException {
-        logger.info("recieved return game request");
-        String result = videoGameService.returnGame(returnGameRequest.getName(), returnGameRequest.getCustomerID(), returnGameRequest.getTitle()
-                , returnGameRequest.getGivenrentalID()); // this is the result of the return game request
+    public ResponseEntity returnGame(@RequestBody ReturnGameRequest request) throws IOException {
+        logger.info("received return game request");
+        String result = videoGameService.returnGame(request.getName(), request.getCustomerID(), request.getTitle()
+                , request.getGivenrentalID()); // this is the result of the return game request
         logger.info(result);
         return ResponseEntity.ok(result);
     }

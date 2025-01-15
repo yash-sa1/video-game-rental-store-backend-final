@@ -1,8 +1,8 @@
 package com.example.demo.data;
 
-import com.example.demo.model.Customer;
-import com.example.demo.model.Rental;
-import com.example.demo.model.VideoGame;
+import com.example.demo.model.entity.Customer;
+import com.example.demo.model.entity.Rental;
+import com.example.demo.model.entity.VideoGame;
 import com.example.demo.service.FileUtils;
 import org.springframework.stereotype.Service;
 

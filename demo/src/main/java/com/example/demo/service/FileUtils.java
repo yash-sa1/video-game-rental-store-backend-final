@@ -12,6 +12,7 @@ public class FileUtils {
     public static void savedata(String targetinput, String filename) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) {
             writer.write(targetinput);
+            writer.newLine();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -65,7 +66,7 @@ public class FileUtils {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileToBeModified))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.startsWith(enteredCharacters + ",false")) {
+                if (line.contains(enteredCharacters + ",false")) {
                     String[] parts = line.split(",");
                     parts[5] = String.valueOf(newStatus);
                     line = String.join(",", parts);
@@ -76,7 +77,8 @@ public class FileUtils {
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileToBeModified))) {
             for (String line : filecontent) {
-                writer.write(line + "\n");
+                writer.write(line);
+                writer.newLine();
             }
         }
     }
@@ -109,19 +111,19 @@ public class FileUtils {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileToBeModified))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.startsWith(enteredSearch)) {
+                if (line.startsWith(enteredSearch) && line.contains(entryToCheck)) {
                     String[] parts = line.split(",");
                     String correctCodes = parts[4];
                     List<String> uuidList = Arrays.asList(correctCodes.split(","));
                     boolean isReturned = Boolean.parseBoolean(parts[5]);
 
                     List<String> filteredUUIDs = uuidList.stream()
-                            .filter(uuid -> uuid.equals(entryToCheck))
+                            .filter(uuid -> uuid.contains(entryToCheck))
                             .collect(Collectors.toList());
 
                     if (!filteredUUIDs.isEmpty() && !isReturned) {
                         System.out.println("successfully returned!");
-                        changeReturnStatus("src/main/rentals.txt", enteredSearch, true);
+                        changeReturnStatus("rentals.txt", entryToCheck, true);
                         return true;
                     }
                 }

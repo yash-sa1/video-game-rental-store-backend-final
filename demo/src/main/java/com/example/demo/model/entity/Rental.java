@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.demo.model.entity;
 
 import java.util.Date;
 import java.util.List;
@@ -11,11 +11,11 @@ public class Rental {
     private String rentalID;
     private final boolean returned;
 
-    public Rental(VideoGame game, Customer customer,int customerID, Date rentalDate, String rentalID, boolean returned) {
+    public Rental(VideoGame game, Customer customer,int customerID, Date rentalDate, String rentalID1, boolean returned) {
         this.game = game;
         this.customer = customer;
         this.rentalDate = rentalDate;
-        this.rentalID = rentalID;
+        this.rentalID = rentalID1;
         this.returned = returned;
     }
 
@@ -42,11 +42,15 @@ public class Rental {
         }
 
         String videoGameName = parts[0];
-        VideoGame videoGame = videoGames.stream().filter(game -> game.getTitle().equals(videoGameName)).findFirst()
+        VideoGame videoGame = videoGames.stream()
+                .filter(game -> game.getTitle().equals(videoGameName))
+                .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("invalid videogame name" + videoGameName));
 
         String customerName = parts[1];
-        Customer customer = customers.stream().filter(c -> c.getName().equals(customerName)).findFirst()
+        Customer customer = customers.stream()
+                .filter(c -> c.getName().equals(customerName))
+                .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("invalid customer name" + customerName));
 
         int customerID;

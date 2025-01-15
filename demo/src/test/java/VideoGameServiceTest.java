@@ -1,6 +1,10 @@
 import com.example.demo.api.VideoGameController;
 import com.example.demo.data.DataAccessLayer;
-import com.example.demo.model.*;
+import com.example.demo.model.entity.Customer;
+import com.example.demo.model.entity.Rental;
+import com.example.demo.model.entity.VideoGame;
+import com.example.demo.model.request.RentGameRequest;
+import com.example.demo.model.request.ReturnGameRequest;
 import com.example.demo.service.VideoGameService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

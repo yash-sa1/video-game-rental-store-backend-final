@@ -1,8 +1,8 @@
 package com.example.demo.service;
 
-import com.example.demo.model.Customer;
-import com.example.demo.model.Rental;
-import com.example.demo.model.VideoGame;
+import com.example.demo.model.entity.Customer;
+import com.example.demo.model.entity.Rental;
+import com.example.demo.model.entity.VideoGame;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,8 +57,10 @@ public class VideoGameService {
     public int registerCustomer(String customerName) throws IOException {
         int customerID = dataAccessLayer.create_next_id("customers.txt"); // creates a new ID
         var customer = new Customer(customerName, customerID); // creates a new customer object with the entered name
+        customers.add(customer);
         dataAccessLayer.registerCustomer(customer); // registers the customer accessing the data access layer
-        return ( customer.getCustomerid());
+        System.out.println("Customer registered successfully!");
+        return  customer.getCustomerid();
 
     }
 
@@ -80,29 +82,35 @@ public class VideoGameService {
             rentals.add(rental);
             dataAccessLayer.saveRental(rental); // saves the rental details to the rentals file
             dataAccessLayer.changeStockAfterRenting(game); // changes the stock after renting
-            return ("its done");
+            return ("its done!");
         } else {
-            return ("customer or game not found or game out of stock");
+            System.out.println("customer or game not found or game out of stock");
         }
+        return ("its not done!");
 
     }
 
-    public String returnGame( String name, Integer customerID, String title, String givenrentalID) throws IOException {
-        Customer customer = customers.stream().filter(c -> c.getCustomerid() == customerID).findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("invalid customer id" + customerID));
-        // utilising streams to filter the customer and game objects and finds the first one that matches the given title
-        VideoGame game = games.stream().filter(g -> g.getTitle().equals(title)).findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("invalid game title" + title));
-
-        Rental rental = rentals.stream().filter(r -> r.getCustomer().getName().equals(name) && r.getGame().getTitle().equals(title) && r.getRentalID().equals(givenrentalID)).findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("invalid rental details" + name + title + givenrentalID));
-
-        if (customer != null && game != null && dataAccessLayer.checkRentalID(rental, givenrentalID)) { // checks if the rental ID is valid
-            return "Game returned successfully!";
+    public String returnGame(String name, Integer customerID, String title, String givenRentalID) throws IOException {
+        VideoGame game = games.stream()
+                .filter(g -> g.getTitle().equals(title))
+                .findFirst()
+                .orElse(null);
+        Rental rental = rentals.stream()
+                .filter(r -> r.getCustomer().getName().equals(name)
+                        && r.getCustomer().getCustomerid() == customerID
+                        && r.getGame().getTitle().equals(title)
+                        && r.getRentalID().endsWith(givenRentalID))
+                .findFirst()
+                .orElse(null);
+        if (game != null && dataAccessLayer.checkRentalID(rental, givenRentalID)) {
+            dataAccessLayer.changeStockAfterReturning(game);
+            return ("its done!");
         } else {
-            return "Game not returned!";
+            System.out.println("customer or game not found. Or game may be out of stock.");
         }
+        return ("complete");
     }
+
 
     public List<String> displayRentals(String customerID) throws IOException {
         return dataAccessLayer.readAndPrintRentalsFile(customerID); // reads and prints the rentals file by customer ID

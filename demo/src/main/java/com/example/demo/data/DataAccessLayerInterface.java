@@ -1,13 +1,11 @@
 package com.example.demo.data;
 
-import com.example.demo.model.Customer;
-import com.example.demo.model.Rental;
-import com.example.demo.model.VideoGame;
+import com.example.demo.model.entity.Customer;
+import com.example.demo.model.entity.Rental;
+import com.example.demo.model.entity.VideoGame;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 
 public interface DataAccessLayerInterface {
 

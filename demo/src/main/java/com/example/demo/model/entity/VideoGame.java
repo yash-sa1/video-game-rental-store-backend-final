@@ -1,5 +1,10 @@
-package com.example.demo.model;
+package com.example.demo.model.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class VideoGame {
     private String title;
     private String genre;
@@ -10,10 +15,10 @@ public class VideoGame {
 
     public VideoGame(String title,int gameID, String genre, double price, int current_stock,  String imageUrl) {
         this.title = title;
-        this.genre = genre;
+        this.gameID = gameID;
         this.price = price;
         this.current_stock = current_stock;
-        this.gameID = gameID;
+        this.genre = genre;
         this.imageUrl = imageUrl;
     }
 
@@ -55,14 +60,7 @@ public class VideoGame {
 
     @Override
     public String toString() {
-        return "VideoGame{" +
-                "title='" + title + '\'' +
-                ", genre='" + genre + '\'' +
-                ", price=" + price +
-                ", current_stock=" + current_stock +
-                ", gameID=" + gameID +
-                ", imageUrl='" + imageUrl + '\'' +
-                '}';
+        return "\n{" + title + "," + gameID + "," + genre + "," + price + "," + current_stock + "," + imageUrl + "}\n";
     }
 }
 
