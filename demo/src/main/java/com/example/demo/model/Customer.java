@@ -33,6 +33,10 @@ public class Customer {
         return new Customer(customerName, customerID);
 
     }
+    @Override
+    public String toString() {
+        return name + "," + customerid;
+    }
 
 
 }

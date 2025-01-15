@@ -55,7 +55,7 @@ public class VideoGameController {
 
     @PostMapping("/rent-game")
     public ResponseEntity rentGame(@RequestBody RentGameRequest rentGameRequest) throws IOException {
-        logger.info("recieved rent game request"); // this is the logger info for the rent game request
+        logger.info("received rent game request"); // this is the logger info for the rent game request
         String result = videoGameService.rentGame(rentGameRequest.getCustomerId(), rentGameRequest.getGameTitle());
         logger.info(result);
         return ResponseEntity.ok(result);

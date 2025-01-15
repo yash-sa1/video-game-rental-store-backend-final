@@ -64,11 +64,15 @@ public class VideoGameService {
 
     public String rentGame(int customerID, String title) throws IOException {
 
-        Customer customer = customers.stream().filter(c -> c.getCustomerid() == customerID).findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("invalid customer id" + customerID));
+        Customer customer = customers.stream()
+                .filter(c -> c.getCustomerid() == customerID)
+                .findFirst()
+                .orElse(null); // utilising streams to filter the customer objects and finds the first one that matches the given customer ID
 
-        VideoGame game = games.stream().filter(g -> g.getTitle().equals(title)).findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("invalid game title" + title)); // utilising streams to filter the customer and game objects and finds the first one that matches the given title
+        VideoGame game = games.stream()
+                .filter(g -> g.getTitle().equals(title))
+                .findFirst()
+                .orElse(null);
 
         if (customer !=null && game != null && game.getCurrent_stock() >= 1) { // checks if the customer and game are valid and if the game is in stock
             String specificRentalID = UUID.randomUUID().toString();
@@ -76,7 +80,7 @@ public class VideoGameService {
             rentals.add(rental);
             dataAccessLayer.saveRental(rental); // saves the rental details to the rentals file
             dataAccessLayer.changeStockAfterRenting(game); // changes the stock after renting
-            return ("completed request");
+            return ("its done");
         } else {
             return ("customer or game not found or game out of stock");
         }
