@@ -1,15 +1,14 @@
-fifa 16,1,sport,13,47,https://www.fifauteam.com/wp-content/uploads/2015/07/A638-11.jpg
-fortnite,2,battle royale,0,108,https://e.snmc.io/lk/l/x/5c29b176b854d4326a1ef739065ddab6/10934807
+fifa 16,1,sport,13,45,https://www.fifauteam.com/wp-content/uploads/2015/07/A638-11.jpg
+fortnite,2,battle royale,0,108,https://static.wikia.nocookie.net/fortnite/images/a/ae/Fortnite_%28Update_v28.00%29_-_Cover_Art_-_Fortnite.jpg/revision/latest?cb=20231203094112
 The Last of Us Part II,3,action-adventure,5.99,12,https://m.media-amazon.com/images/I/61XLfBCZ8HL.jpg
-God of War Ragnarök,4,action-adventure,6.99,8,https://m.media-amazon.com/images/I/719TRoAm9LL._AC_UF894,1000_QL80_.jpg
-Horizon Forbidden West,5,rpg,5.99,10,https://upload.wikimedia.org/wikipedia/en/6/69/Horizon_Forbidden_West.jpg
-Spider-Man: Miles Morales,6,action,4.99,15,https://m.media-amazon.com/images/I/71NP9JmbA2L._AC_UF894,1000_QL80_.jpg
-Call of Duty: Modern Warfare II,7,shooter,10.99,20,https://upload.wikimedia.org/wikipedia/en/a/a4/Modern_Warfare_II_Cover.jpg
-Elden Ring,8,rpg,14.99,18,https://upload.wikimedia.org/wikipedia/en/4/45/Elden_Ring_cover_art.jpg
-Red Dead Redemption 2,9,action-adventure,19.99,25,https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_2.jpg
+God of War Ragnarök,4,action-adventure,6.99,8,https://assets-prd.ignimgs.com/2022/07/25/9781506733494-1658716557072.jpg
+Horizon Forbidden West,5,rpg,5.99,10,https://d2lzb5v10mb0lj.cloudfront.net/darkhorse/blog/-2022/horizonforbiddenwestcover.jpg
+Spider-Man: Miles Morales,6,action,4.99,15,https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png
+Call of Duty: Modern Warfare II,7,shooter,10.99,20,https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da2e818a-3de6-44e0-979b-26c76ad4ccd6/d20w2ny-64016c01-cc73-4a10-aee3-f58f368d6c3c.png/v1/fill/w_700,h_836/modern_warfare_2_1st_cover__by_cokra_d20w2ny-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODM2IiwicGF0aCI6IlwvZlwvZGEyZTgxOGEtM2RlNi00NGUwLTk3OWItMjZjNzZhZDRjY2Q2XC9kMjB3Mm55LTY0MDE2YzAxLWNjNzMtNGExMC1hZWUzLWY1OGYzNjhkNmMzYy5wbmciLCJ3aWR0aCI6Ijw9NzAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.k9xZLo8i_ErTcB7OfoIh_HVuoqK9RYtQeogcQ0citeY
+Elden Ring,8,rpg,14.99,18,https://static.posters.cz/image/750/posters/elden-ring-battlefield-of-the-fallen-i121753.jpg
+Red Dead Redemption 2,9,action-adventure,19.99,25,https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be9aa2ef-e61a-4069-b629-a433bfe5d644/de6egex-338a4765-3003-4999-ac39-9f374b40906b.png/v1/fill/w_1600,h_1600,q_80,strp/red_dead_redemption_2_cover_art_by_disintegratorfilms_de6egex-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcL2JlOWFhMmVmLWU2MWEtNDA2OS1iNjI5LWE0MzNiZmU1ZDY0NFwvZGU2ZWdleC0zMzhhNDc2NS0zMDAzLTQ5OTktYWMzOS05ZjM3NGI0MDkwNmIucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.22oMCeeCF0CwhrS67nW49VEQxX8_xwms2J8-hBzVFUE
 Cyberpunk 2077,10,rpg,29.99,30,https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg
-Minecraft,11,sandbox,26.99,200,https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png
-Grand Theft Auto V,12,action-adventure,19.99,50,https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png
-Assassin's Creed Valhalla,13,action-adventure,24.99,15,https://upload.wikimedia.org/wikipedia/en/8/8e/ACValhallaCover.jpg
-Overwatch 2,14,shooter,0.00,100,https://upload.wikimedia.org/wikipedia/en/3/3e/Overwatch_2_cover_art.jpg
-Legend of Zelda: Breath of the Wild,15,action-adventure,49.99,40,https://upload.wikimedia.org/wikipedia/en/a/a1/The_Legend_of_Zelda_Breath_of_the_Wild.jpg
+Minecraft,11,sandbox,26.99,200,https://cdn.mobygames.com/covers/3741959-minecraft-windows-apps-front-cover.jpg
+Assassin's Creed Valhalla,13,action-adventure,24.99,15,https://conceptartworld.com/wp-content/uploads/2021/03/The-Art-of-Assassins-Creed-Valhalla-01-Cover.jpg
+Overwatch 2,14,shooter,0.00,100,https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/12/mixcollage-08-dec-2024-02-28-pm-1309.jpg
+Legend of Zelda: Breath of the Wild,15,action-adventure,49.99,40,https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6505fad1-fc7a-4e7c-a06a-2b344f391d46/demhgcl-bc2f9912-fb4d-44de-a160-bf537fd266b1.png/v1/fill/w_757,h_1055,q_70,strp/legend_of_zelda_botw_cover_art_by_untillions_demhgcl-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQyNiIsInBhdGgiOiJcL2ZcLzY1MDVmYWQxLWZjN2EtNGU3Yy1hMDZhLTJiMzQ0ZjM5MWQ0NlwvZGVtaGdjbC1iYzJmOTkxMi1mYjRkLTQ0ZGUtYTE2MC1iZjUzN2ZkMjY2YjEucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.RYCPzQy-GASuUqCbMjbF9SEYUJhs1FN-RGR9q529dOs

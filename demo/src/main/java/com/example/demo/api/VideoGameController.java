@@ -31,6 +31,7 @@ public class VideoGameController {
     @GetMapping("/videogames")
     public ResponseEntity<List<VideoGame>> getAllVideoGames() {
         logger.info("recieved get all video games request");
+        logger.info("sending data :" + videoGameService.getAllVideoGames());
         return ResponseEntity.ok(videoGameService.getAllVideoGames());
     }
 
